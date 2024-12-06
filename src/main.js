@@ -3,7 +3,8 @@ import { env } from "fastly:env";
 
 addEventListener("fetch", (event) => event.respondWith(handleRequest(event)));
 
-async function handleRequest(event: FetchEvent) {
+/** @param {FetchEvent} event */
+async function handleRequest(event) {
   // Log service version
   console.log(
     "FASTLY_SERVICE_VERSION:",

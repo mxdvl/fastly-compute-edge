@@ -12,7 +12,7 @@
   },
   "scripts": {
     "prebuild": "tsc",
-    "build": "js-compute-runtime build/index.js bin/main.wasm",
+    "build": "js-compute-runtime build/main.js bin/main.wasm",
     "start": "fastly compute serve",
     "deploy": "fastly compute publish"
   }
