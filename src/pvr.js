@@ -30,7 +30,7 @@ export async function pvr(event, url) {
   const text = await response.text();
 
   return new Response(
-    text.replaceAll(/ (src|href)="\/([^\/])+/g, ' $1="/pvr/$2'),
+    text.replaceAll(/ (src|href)="\/([^\/]+)/g, ` $1="${base}$2`),
     {
       headers: new Headers({ "Content-Type": "text/html" }),
     },
