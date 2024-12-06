@@ -12,3 +12,9 @@ service_id = ""
 [scripts]
   build = "npm run build"
   post_init = "npm install"
+
+[local_server]
+[local_server.backends]
+    [local_server.backends.pvr]
+        url = "https://reports.hometrack.com/"
+        override_host = "reports.hometrack.com"
