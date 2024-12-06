@@ -7,7 +7,7 @@ description = "Playground for experimenting with Compute@edge"
 language = "javascript"
 manifest_version = 3
 name = "fastly-compute-edge"
-service_id = ""
+service_id = "D3hoWT1hyiYrzFFrIodZA2"
 
 [scripts]
   build = "npm run build"
